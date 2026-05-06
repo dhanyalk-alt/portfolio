@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanya L K — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal-50: #E1F5EE; --teal-100: #9FE1CB; --teal-400: #1D9E75; --teal-600: #0F6E56; --teal-800: #085041;
+    --coral-50: #FAECE7; --coral-100: #F5C4B3; --coral-400: #D85A30; --coral-600: #993C1D;
+    --gray-50: #F1EFE8; --gray-100: #D3D1C7; --gray-400: #888780; --gray-600: #5F5E5A; --gray-800: #444441;
+    --purple-50: #EEEDFE; --purple-400: #7F77DD; --purple-600: #534AB7; --purple-800: #3C3489;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0a0f0d;
+    color: #e8ede9;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.2rem 3rem;
+    background: rgba(10,15,13,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(29,158,117,0.15);
+  }
+  .nav-logo { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--teal-100); letter-spacing: 0.02em; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { color: var(--gray-400); font-size: 0.88rem; text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--teal-100); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 6rem 3rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(29,158,117,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute; bottom: -100px; left: 10%;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(127,119,221,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-text { z-index: 1; }
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--teal-400);
+    border: 1px solid rgba(29,158,117,0.4);
+    padding: 0.35rem 0.9rem;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.05;
+    color: #f0f5f1;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+  .hero-name em { font-style: italic; color: var(--teal-100); }
+  .hero-tagline {
+    margin-top: 1.5rem;
+    font-size: 1.05rem; font-weight: 300;
+    color: var(--gray-400); line-height: 1.7;
+    max-width: 440px;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+  .hero-cta {
+    margin-top: 2.5rem;
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+  .btn-primary {
+    background: var(--teal-400);
+    color: #fff; border: none;
+    padding: 0.8rem 2rem; border-radius: 0.25rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem; font-weight: 500; letter-spacing: 0.03em;
+    cursor: pointer; transition: background 0.2s, transform 0.15s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--teal-600); transform: translateY(-1px); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--teal-100); border: 1px solid rgba(29,158,117,0.4);
+    padding: 0.8rem 2rem; border-radius: 0.25rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem; font-weight: 400; letter-spacing: 0.03em;
+    cursor: pointer; transition: border-color 0.2s, color 0.2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn-ghost:hover { border-color: var(--teal-400); color: #fff; }
+
+  .hero-visual {
+    z-index: 1;
+    display: flex; justify-content: center; align-items: center;
+  }
+  .avatar-ring {
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    border: 2px solid rgba(29,158,117,0.25);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    animation: fadeUp 0.6s 0.15s ease both;
+  }
+  .avatar-ring::before {
+    content: '';
+    position: absolute; inset: -12px;
+    border-radius: 50%;
+    border: 1px dashed rgba(29,158,117,0.2);
+    animation: spin 30s linear infinite;
+  }
+  .avatar-inner {
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(29,158,117,0.15), rgba(127,119,221,0.1));
+    border: 1px solid rgba(29,158,117,0.2);
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 0.5rem;
+  }
+  .avatar-initials {
+    font-family: 'DM Serif Display', serif;
+    font-size: 5rem; color: var(--teal-100); line-height: 1;
+  }
+  .avatar-sub { font-size: 0.78rem; letter-spacing: 0.12em; color: var(--gray-400); text-transform: uppercase; }
+
+  /* STATS ROW */
+  .stats-row {
+    display: flex; gap: 2rem;
+    padding: 2rem 3rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.02);
+    animation: fadeUp 0.6s 0.4s ease both;
+  }
+  .stat { display: flex; flex-direction: column; align-items: center; flex: 1; }
+  .stat-num { font-family: 'DM Serif Display', serif; font-size: 2.2rem; color: var(--teal-100); }
+  .stat-label { font-size: 0.78rem; letter-spacing: 0.08em; color: var(--gray-400); text-transform: uppercase; margin-top: 0.2rem; }
+
+  /* SECTIONS */
+  section { padding: 5rem 3rem; }
+  .section-label {
+    font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--teal-400); margin-bottom: 1rem;
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #f0f5f1; line-height: 1.15; margin-bottom: 3rem;
+  }
+
+  /* SKILLS */
+  #skills { background: rgba(255,255,255,0.015); }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .skill-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 0.5rem;
+    padding: 1.2rem 1.4rem;
+    transition: border-color 0.2s, transform 0.15s;
+  }
+  .skill-card:hover { border-color: rgba(29,158,117,0.4); transform: translateY(-2px); }
+  .skill-category { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal-400); margin-bottom: 0.6rem; }
+  .skill-list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .skill-tag {
+    font-size: 0.82rem; font-weight: 400;
+    background: rgba(29,158,117,0.1); color: var(--teal-100);
+    border: 1px solid rgba(29,158,117,0.2);
+    padding: 0.25rem 0.65rem; border-radius: 2rem;
+  }
+
+  /* PROJECTS */
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+  .project-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 0.75rem;
+    padding: 1.8rem;
+    transition: border-color 0.25s, transform 0.2s;
+    display: flex; flex-direction: column;
+  }
+  .project-card:hover { border-color: rgba(29,158,117,0.4); transform: translateY(-3px); }
+  .project-number { font-size: 0.72rem; letter-spacing: 0.2em; color: var(--gray-600); text-transform: uppercase; margin-bottom: 0.8rem; }
+  .project-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem; color: #f0f5f1; margin-bottom: 0.6rem;
+  }
+  .project-name em { font-style: italic; color: var(--teal-100); }
+  .project-desc { font-size: 0.88rem; color: var(--gray-400); line-height: 1.65; flex: 1; margin-bottom: 1.2rem; }
+  .project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tech-tag {
+    font-size: 0.75rem;
+    background: rgba(127,119,221,0.1); color: #AFA9EC;
+    border: 1px solid rgba(127,119,221,0.2);
+    padding: 0.2rem 0.6rem; border-radius: 2rem;
+  }
+
+  /* EDUCATION */
+  #education { background: rgba(255,255,255,0.015); }
+  .edu-timeline { display: flex; flex-direction: column; gap: 1.5rem; }
+  .edu-card {
+    display: grid; grid-template-columns: 120px 1fr;
+    gap: 1.5rem; align-items: start;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 0.5rem;
+  }
+  .edu-year { font-size: 0.8rem; color: var(--teal-400); font-weight: 500; padding-top: 0.15rem; }
+  .edu-institution { font-size: 1rem; font-weight: 500; color: #e8ede9; }
+  .edu-degree { font-size: 0.85rem; color: var(--gray-400); margin-top: 0.25rem; }
+  .edu-score {
+    display: inline-block; margin-top: 0.6rem;
+    font-size: 0.78rem; font-weight: 500;
+    background: rgba(29,158,117,0.12); color: var(--teal-100);
+    border: 1px solid rgba(29,158,117,0.25);
+    padding: 0.2rem 0.7rem; border-radius: 2rem;
+  }
+
+  /* CERTIFICATIONS */
+  .certs-row { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .cert-pill {
+    display: flex; align-items: center; gap: 0.6rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.7rem 1.1rem; border-radius: 0.5rem;
+    font-size: 0.85rem; color: #c8d4ca;
+    transition: border-color 0.2s;
+  }
+  .cert-pill:hover { border-color: rgba(29,158,117,0.4); }
+  .cert-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal-400); flex-shrink: 0; }
+
+  /* CONTACT */
+  #contact { text-align: center; }
+  .contact-box {
+    max-width: 500px; margin: 0 auto;
+    background: rgba(29,158,117,0.06);
+    border: 1px solid rgba(29,158,117,0.2);
+    border-radius: 1rem; padding: 3rem 2rem;
+  }
+  .contact-email {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem; color: var(--teal-100);
+    text-decoration: none; display: block; margin: 1rem 0;
+  }
+  .contact-email:hover { text-decoration: underline; }
+  .contact-links { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
+
+  /* FOOTER */
+  footer {
+    text-align: center; padding: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.78rem; color: var(--gray-600);
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .fade-in { animation: fadeUp 0.6s ease both; }
+
+  @media (max-width: 700px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 5rem 1.5rem 3rem; }
+    .hero-visual { display: none; }
+    section { padding: 3rem 1.5rem; }
+    .stats-row { padding: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+    .edu-card { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Dhanya L K</span>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <span class="hero-eyebrow">Aspiring Software Engineer</span>
+    <h1 class="hero-name">Dhanya <em>L K</em></h1>
+    <p class="hero-tagline">Computer Science student building AI-powered systems and full-stack web applications. Passionate about scalable solutions at the intersection of data and user experience.</p>
+    <div class="hero-cta">
+      <a href="mailto:dhanyadhanyalk@gmail.com" class="btn-primary">Get in Touch</a>
+      <a href="https://github.com/dhanyalk-alt" target="_blank" class="btn-ghost">GitHub →</a>
+    </div>
+  </div>
+<div class="hero-visual">
+    <div class="avatar-ring">
+      <div class="avatar-inner" style="overflow: hidden;">
+        <img src="4SO23CS074.JPG" alt="Dhanya L K" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat"><span class="stat-num">9.01</span><span class="stat-label">CGPA</span></div>
+  <div class="stat"><span class="stat-num">3</span><span class="stat-label">Projects</span></div>
+  <div class="stat"><span class="stat-num">3</span><span class="stat-label">Certifications</span></div>
+  <div class="stat"><span class="stat-num">93.6%</span><span class="stat-label">SSLC Score</span></div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label">Technical Expertise</p>
+  <h2 class="section-title">Skills &amp; Technologies</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <p class="skill-category">Languages</p>
+      <div class="skill-list">
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Python</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <p class="skill-category">Frontend</p>
+      <div class="skill-list">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React.js</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <p class="skill-category">Backend</p>
+      <div class="skill-list">
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">REST APIs</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <p class="skill-category">Database & Tools</p>
+      <div class="skill-list">
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Design Thinking</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">Selected Work</p>
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <p class="project-number">01</p>
+      <h3 class="project-name"><em>FishAI</em> — Fishing Zone Prediction</h3>
+      <p class="project-desc">AI-based system predicting Potential Fishing Zones (PFZs) using sea surface temperature, chlorophyll concentration, and ocean currents. Includes spatial dashboard for decision-making and reduced fuel consumption through data-driven zone targeting.</p>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Machine Learning</span>
+        <span class="tech-tag">React.js</span>
+        <span class="tech-tag">APIs</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <p class="project-number">02</p>
+      <h3 class="project-name"><em>Raitha Bandhu</em> — Smart Farmer Platform</h3>
+      <p class="project-desc">Full-stack web app providing farmers with real-time market prices, weather updates, and government scheme information. Built with Design Thinking principles to improve accessibility for farming communities.</p>
+      <div class="project-tech">
+        <span class="tech-tag">React.js</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">REST APIs</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <p class="project-number">03</p>
+      <h3 class="project-name"><em>Smart Diet</em> Planner</h3>
+      <p class="project-desc">Personalized diet plan generator using age, weight, dietary preferences, and health goals. Integrates external APIs for real-time nutritional data with Python-powered recommendation logic.</p>
+      <div class="project-tech">
+        <span class="tech-tag">HTML</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">REST APIs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <p class="section-label">Academic Background</p>
+  <h2 class="section-title">Education</h2>
+  <div class="edu-timeline">
+    <div class="edu-card">
+      <div class="edu-year">2023 – Present</div>
+      <div>
+        <p class="edu-institution">St. Joseph Engineering College, Mangalore</p>
+        <p class="edu-degree">Bachelor of Engineering — Computer Science</p>
+        <span class="edu-score">CGPA: 9.01</span>
+      </div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">2020 – 2022</div>
+      <div>
+        <p class="edu-institution">Brilliant Pre-University College, Hassan</p>
+        <p class="edu-degree">Pre-University Education (PUC)</p>
+        <span class="edu-score">91%</span>
+      </div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">2020</div>
+      <div>
+        <p class="edu-institution">United Academy School, Belur</p>
+        <p class="edu-degree">High School (SSLC)</p>
+        <span class="edu-score">93.6%</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 3rem;">
+    <p class="section-label">Certifications</p>
+    <div class="certs-row" style="margin-top: 1rem;">
+      <div class="cert-pill"><span class="cert-dot"></span>NPTEL — Privacy and Security</div>
+      <div class="cert-pill"><span class="cert-dot"></span>Infosys Springboard — Design and Analysis of Algorithms</div>
+      <div class="cert-pill"><span class="cert-dot"></span>Infosys Springboard — Computational Theory</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Let's Connect</p>
+  <h2 class="section-title" style="text-align:center;">Open to Internships</h2>
+  <div class="contact-box">
+    <p style="font-size:0.9rem; color:var(--gray-400); line-height:1.6;">Detail-oriented CS student seeking hands-on experience in full-stack development and emerging technologies. Let's build something meaningful.</p>
+    <a href="mailto:dhanyadhanyalk@gmail.com" class="contact-email">dhanyadhanyalk@gmail.com</a>
+    <p style="font-size:0.82rem; color:var(--gray-600);">📞 6363106790</p>
+    <div class="contact-links">
+      <a href="https://github.com/dhanyalk-alt" target="_blank" class="btn-ghost" style="font-size:0.85rem; padding:0.6rem 1.4rem;">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Dhanya L K &nbsp;·&nbsp; Computer Science, SJEC Mangalore &nbsp;·&nbsp; 2025</p>
+</footer>
+
+</body>
+</html>
