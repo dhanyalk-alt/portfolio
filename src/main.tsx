@@ -6,7 +6,7 @@ import App from './App.tsx'
 // Seed Megha's GitHub as the "dev activity" link if the user hasn't set one yet.
 try {
   if (!localStorage.getItem('df-dev-activity-link')) {
-    localStorage.setItem('df-dev-activity-link', 'https://github.com/Meghamittal0920')
+    localStorage.setItem('df-dev-activity-link', 'https://github.com/dhanyalk-alt')
   }
 } catch {
   /* localStorage unavailable */
@@ -14,6 +14,6 @@ try {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <App /> 
   </StrictMode>,
 )

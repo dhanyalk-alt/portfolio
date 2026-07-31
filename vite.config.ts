@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:'/Megha-Deskfolio/',
+  base:'/dhanya-Deskfolio/',
   plugins: [react()],
 })

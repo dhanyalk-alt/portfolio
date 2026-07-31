@@ -1085,7 +1085,7 @@ const Be = Mt.map((t) => ({ id: t.id, name: t.name })), Ye = (t) => /sticker-(cu
 ] }), m0 = (t) => /* @__PURE__ */ i("svg", { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", ...t, children: [
   /* @__PURE__ */ e("path", { d: "M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1" }),
   /* @__PURE__ */ e("path", { d: "M14 11a5 5 0 0 0-7.1 0l-2 2a5 5 0 0 0 7.1 7.1l1.1-1.1" })
-] }), He = "https://github.com/Meghamittal0920", ut = "df-dev-activity-link";
+] }), He = "https://github.com/dhanyalk-alt?utm_source=chatgpt.com", ut = "df-dev-activity-link";
 function g0(t) {
   const r = t.trim();
   return r ? /^[a-z][a-z0-9+.-]*:\/\//i.test(r) ? r : `https://${r}` : He;
@@ -2156,11 +2156,11 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
   /* @__PURE__ */ e("span", { className: "df-cover-band", "aria-hidden": "true" }),
   /* @__PURE__ */ i("div", { className: "df-cover-label", children: [
     /* @__PURE__ */ i("span", { className: "df-cover-mark", "aria-hidden": "true", children: [
-      /* @__PURE__ */ e("span", { className: "df-cover-mono", children: "MM" }),
+      /* @__PURE__ */ e("span", { className: "df-cover-mono", children: "DL" }),
       /* @__PURE__ */ e("svg", { className: "df-cover-cursor", viewBox: "0 0 24 24", fill: "currentColor", children: /* @__PURE__ */ e("path", { d: "M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z" }) })
     ] }),
-    /* @__PURE__ */ e("p", { className: "df-cover-title", children: "Megha Mittal" }),
-    /* @__PURE__ */ e("span", { className: "df-cover-sub", children: "anime + code" }),
+    /* @__PURE__ */ e("p", { className: "df-cover-title", children: "Dhanya LK" }),
+    /* @__PURE__ */ e("span", { className: "df-cover-sub", children: "Machine Learning Enthusiast" }),
     /* @__PURE__ */ e("span", { className: "df-cover-lines", "aria-hidden": "true" })
   ] }),
   /* @__PURE__ */ i("span", { className: "df-cover-hint", children: [
@@ -2178,12 +2178,12 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
       /* @__PURE__ */ e("span", { className: "df-heart", "aria-hidden": "true", children: "♡" })
     ] }),
     /* @__PURE__ */ i("div", { className: "df-about-head", children: [
-      /* @__PURE__ */ e("span", { className: "df-avatar df-avatar--big", children: /* @__PURE__ */ e("img", { src: DF_BASE + "megha-profile.jpg", alt: "Megha Mittal", loading: "lazy", decoding: "async" }) }),
+      /* @__PURE__ */ e("span", { className: "df-avatar df-avatar--big", children: /* @__PURE__ */ e("img", { src: DF_BASE + "megha-profile.JPG", alt: "Dhanya LK", loading: "lazy", decoding: "async" }) }),
       /* @__PURE__ */ i("div", { children: [
-        /* @__PURE__ */ e(ue, { className: "df-name", placeholder: "your name", initial: "Megha Mittal" }),
+        /* @__PURE__ */ e(ue, { className: "df-name", placeholder: "your name", initial: "Dhanya LK" }),
         /* @__PURE__ */ i("span", { className: "df-role", children: [
           /* @__PURE__ */ e(pe, {}),
-          " frontend developer · Noida"
+          " hiii, i am dhanya LK❤️"
         ] })
       ] })
     ] }),
@@ -2192,13 +2192,16 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
       {
         className: "df-edit--body",
         placeholder: "a little about you…",
-        initial: "I build clean, responsive digital experiences with HTML, JavaScript, SQL & SAP — and anime tribute websites the internet keeps starring. I don't code anime, I watch anime ✨"
+        initial: "Motivated and detail-oriented Computer Science graduate seeking an entry-level machine learning role to apply strong foundations in Python, data preprocessing, and model building. Eager to contribute to data-driven solutions and grow within a collaborative AI/ML team."
       }
     ) }),
+    /* @__PURE__ */ e("li", { children: /* @__PURE__ */ i("a", { className: "df-link", href: DF_BASE + "resume.pdf", target: "_blank", rel: "noreferrer", children: [
+  " Resume"
+] }) }),
     /* @__PURE__ */ e("p", { className: "df-label df-label--push", children: "currently…" }),
     /* @__PURE__ */ i("span", { className: "df-date", children: [
       /* @__PURE__ */ e(De, {}),
-      " open to freelance & collabs"
+      "open to opportunities"
     ] })
   ] }, "p0"),
   // spread 1 right: skills
@@ -2214,12 +2217,13 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
         " i build with"
       ] }),
       /* @__PURE__ */ i("ul", { className: "df-tags", children: [
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Python" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "C" }),
         /* @__PURE__ */ e("li", { className: "df-tag", children: "HTML" }),
         /* @__PURE__ */ e("li", { className: "df-tag", children: "CSS" }),
-        /* @__PURE__ */ e("li", { className: "df-tag", children: "JavaScript" }),
-        /* @__PURE__ */ e("li", { className: "df-tag", children: "TypeScript" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "React" }),
         /* @__PURE__ */ e("li", { className: "df-tag", children: "SQL" }),
-        /* @__PURE__ */ e("li", { className: "df-tag", children: "SAP" })
+        
       ] })
     ] }),
     /* @__PURE__ */ i("div", { className: "df-card", children: [
@@ -2228,81 +2232,155 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
         " i care about"
       ] }),
       /* @__PURE__ */ i("ul", { className: "df-tags df-tags--blush", children: [
-        /* @__PURE__ */ e("li", { className: "df-tag", children: "clean UI" }),
-        /* @__PURE__ */ e("li", { className: "df-tag", children: "responsive design" }),
-        /* @__PURE__ */ e("li", { className: "df-tag", children: "anime aesthetics" }),
-        /* @__PURE__ */ e("li", { className: "df-tag", children: "storytelling" })
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Machine Learning Basics" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Scikit-learn" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Artificial Neural Networks (ANN)" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Convolutional Neural Networks (CNN)" }),
+        
+      ] })
+    ] }),
+    /* @__PURE__ */ i("div", { className: "df-card", children: [
+      /* @__PURE__ */ i("p", { className: "df-card-title", children: [
+        /* @__PURE__ */ e(De, {}),
+        " Data Analysis & Visualization"
+      ] }),
+      /* @__PURE__ */ i("ul", { className: "df-tags df-tags--blush", children: [
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Pandas" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "NumPy" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Matplotlib" }),
+     
+        
+      ] })
+    ] }),
+      /* @__PURE__ */ i("div", { className: "df-card", children: [
+      /* @__PURE__ */ i("p", { className: "df-card-title", children: [
+        /* @__PURE__ */ e(De, {}),
+        " Hands on experience with databases and Web & Deployment"
+      ] }),
+      /* @__PURE__ */ i("ul", { className: "df-tags df-tags--blush", children: [
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "MySQL" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "PostgreSQL" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "MongoDB" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "FastAPI" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "REST APIs" }),
+        
       ] })
     ] })
-  ] }, "p1"),
+] }, "p1"),
+     /* @__PURE__ */ i("div", { className: "df-page", children: [
+    /* @__PURE__ */ e(st, { className: "df-doodle df-doodle--lilac", style: { top: 0, right: 4, width: 26, height: 26 } }),
+    /* @__PURE__ */ e(De, { className: "df-doodle df-doodle--soft", style: { bottom: 96, right: 34, width: 26, height: 26, transform: "rotate(10deg)" } }),
+    /* @__PURE__ */ e(pe, { className: "df-doodle df-doodle--soft df-doodle--lilac", style: { bottom: 150, left: 14, width: 18, height: 18 } }),
+    /* @__PURE__ */ e(st, { className: "df-doodle df-doodle--soft df-doodle--mint", style: { bottom: 60, left: 30, width: 24, height: 24 } }),
+
+     /* @__PURE__ */ i("div", { className: "df-card", children: [
+      /* @__PURE__ */ i("p", { className: "df-card-title", children: [
+        /* @__PURE__ */ e(De, {}),
+        " Computer Science Fundamentals"
+      ] }),
+      /* @__PURE__ */ i("ul", { className: "df-tags df-tags--blush", children: [
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Data Structures and Algorithms" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Operating Systems" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Object-Oriented Programming" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Database Management systems[dbms]" }),
+        /* @__PURE__ */ e("li", { className: "df-tag", children: "Computer Networks" }),
+        
+      ] })
+    ] })
+    
+  ] }, "p2"),
   // spread 2 left: selected work
   /* @__PURE__ */ i("div", { className: "df-page", children: [
     /* @__PURE__ */ e("h3", { className: "df-hello", children: "selected work" }),
     /* @__PURE__ */ i("div", { className: "df-proj", children: [
       /* @__PURE__ */ i("p", { className: "df-proj-head", children: [
-        /* @__PURE__ */ e($e, { href: "https://github.com/Meghamittal0920/Naruto-SageMode", variant: 0, children: "Naruto SageMode" }),
-        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "31★ on GitHub" })
-      ] }),
-      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "An HTML/CSS/JS tribute to Sage Mode — my most-starred project, forked 16 times." })
+        /* @__PURE__ */ e($e, { href: "https://github.com/dhanyalk-alt/energy-marketplace.git", variant: 0, children: "▽ Multi-Agent " }),
+        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "Python, NumPy, Pandas, Matplotlib, PostgreSQL" })
+      ]
+     }),
+      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "A simulated energy marketplace where autonomous agents (producers, consumers, grid, market) trade power using dynamic, demand-based pricing, visualized through live dashboards." })
     ] }),
     /* @__PURE__ */ i("div", { className: "df-proj", children: [
       /* @__PURE__ */ i("p", { className: "df-proj-head", children: [
-        /* @__PURE__ */ e($e, { href: "https://github.com/Meghamittal0920/One-Piece-3D-Website", variant: 2, children: "One Piece 3D" }),
-        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "TypeScript" })
+        /* @__PURE__ */ e($e, { href: "https://github.com/dhanyalk-alt/FSDproject.git", variant: 2, children: "▽ Raitha Bandhu" }),
+        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "React.js, Node.js, MongoDB, REST APIs" })
       ] }),
-      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "A 3D One Piece website — set sail with the Straw Hats in the browser." })
+      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "A full-stack web app giving farmers real-time market prices, weather updates, and government scheme info and so on features, built with a React.js frontend and Node.js/MongoDB backend, designed for accessibility." })
     ] })
-  ] }, "p2"),
+  ] }, "p3"),
+  /* @__PURE__ */ i("div", { className: "df-page", children: [
+        /* @__PURE__ */ i("div", { className: "df-proj", children: [
+      /* @__PURE__ */ i("p", { className: "df-proj-head", children: [
+        /* @__PURE__ */ e($e, { href: "https://github.com/dhanyalk-alt/fisherman_planner.git", variant: 0, children: "▽ FishAI " }),
+        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "Python, Scikit-learn, React.js, APIs" })
+      ] }),
+      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "An ML-based system that predicts Potential Fishing Zones from oceanographic data like sea surface temperature and chlorophyll levels, shown on a spatial dashboard to help fishermen save fuel and improve catch efficiency." })
+    ] }),
+    ] }, "p4"),
   // spread 2 right: more work
   /* @__PURE__ */ i("div", { className: "df-page", children: [
     /* @__PURE__ */ e(pe, { className: "df-doodle df-doodle--butter", style: { bottom: 16, right: 12, width: 22, height: 22 } }),
-    /* @__PURE__ */ e("h3", { className: "df-hello df-hello--lilac", children: "more work" }),
+    /* @__PURE__ */ e("h3", { className: "df-hello df-hello--lilac", children: "education" }),
     /* @__PURE__ */ i("div", { className: "df-proj", children: [
       /* @__PURE__ */ i("p", { className: "df-proj-head", children: [
-        /* @__PURE__ */ e($e, { href: "https://github.com/Meghamittal0920/Zoro-King-of-hell", variant: 3, children: "Zoro: King of Hell" }),
-        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "fan page" })
+        /* @__PURE__ */ e($e, {  variant: 3, children: "💕Engineering college" }),
+        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "currently maintaining a CGPA of 9.03." })
       ] }),
-      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "Three swords, one page. A dark, cinematic tribute to the future King of Hell." })
+      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "St. Joseph Engineering College, Mangaluru — Bachelor of Engineering in Computer Science (2023–Present)" })
     ] }),
     /* @__PURE__ */ i("div", { className: "df-proj", children: [
       /* @__PURE__ */ i("p", { className: "df-proj-head", children: [
-        /* @__PURE__ */ e($e, { href: "https://github.com/Meghamittal0920/Gojo", variant: 1, children: "Gojo & Sukuna" }),
-        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "JJK duo" })
+        /* @__PURE__ */ e($e, {  variant: 1, children: "💕 Pre-University College" }),
+        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "scoring 91%." })
       ] }),
-      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "Twin Jujutsu Kaisen tributes — the honored one and the King of Curses, both in pure HTML/CSS/JS." })
+      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "Brilliant Pre-University College, Hassan —Completed Pre-University Education in the PCMB stream (Physics, Chemistry, Mathematics, Biology) from 2020–2022." })
+    ] }),
+    /* @__PURE__ */ i("div", { className: "df-proj", children: [
+      /* @__PURE__ */ i("p", { className: "df-proj-head", children: [
+        /* @__PURE__ */ e($e, {  variant: 1, children: "💕 Primary school" }),
+        /* @__PURE__ */ e("span", { className: "df-proj-meta", children: "scoring 93%." })
+      ] }),
+      /* @__PURE__ */ e(ue, { className: "df-edit--body df-proj-desc", placeholder: "describe it…", initial: "United Academy School, Belur — Completed SSLC (10th grade) in 2020" })
     ] }),
     /* @__PURE__ */ i("p", { className: "df-sig", children: [
-      "…and more on the shelf ",
+      "story of my journey so far ",
       /* @__PURE__ */ e("span", { className: "df-heart", "aria-hidden": "true", children: "♡" })
     ] })
-  ] }, "p3"),
+  ] }, "p5"),
   // spread 3 left: experience timeline
   /* @__PURE__ */ i("div", { className: "df-page", children: [
-    /* @__PURE__ */ e("h3", { className: "df-hello", children: "experience" }),
+    /* @__PURE__ */ e("h3", { className: "df-hello", children: "Certifications" }),
     /* @__PURE__ */ i("ul", { className: "df-xp", children: [
       /* @__PURE__ */ i("li", { className: "df-xp-row", children: [
         /* @__PURE__ */ e("span", { className: "df-xp-dot", "aria-hidden": "true" }),
         /* @__PURE__ */ i("div", { children: [
-          /* @__PURE__ */ e("p", { className: "df-xp-role", children: "Frontend Developer" }),
-          /* @__PURE__ */ e("p", { className: "df-xp-meta", children: "Wiley · now" })
+          /* @__PURE__ */ e("p", { className: "df-xp-role", children: "♡ NPTEL – Privacy and Security" }),
+          /* @__PURE__ */ e("p", { className: "df-xp-meta", children: "scored 69%,Covers core concepts of data privacy, security threats, and protection mechanisms in computing systems." })
         ] })
       ] }),
       /* @__PURE__ */ i("li", { className: "df-xp-row", children: [
         /* @__PURE__ */ e("span", { className: "df-xp-dot", "aria-hidden": "true" }),
         /* @__PURE__ */ i("div", { children: [
-          /* @__PURE__ */ e("p", { className: "df-xp-role", children: "Open-source Anime Web Projects" }),
-          /* @__PURE__ */ e("p", { className: "df-xp-meta", children: "GitHub · 11 repos, 100+ stars" })
+          /* @__PURE__ */ e("p", { className: "df-xp-role", children: "♡ Infosys Springboard – Design and Analysis of Algorithms" }),
+          /* @__PURE__ */ e("p", { className: "df-xp-meta", children: "Focuses on algorithm design techniques, complexity analysis, and problem-solving strategies for efficient computing." })
         ] })
       ] }),
       /* @__PURE__ */ i("li", { className: "df-xp-row", children: [
         /* @__PURE__ */ e("span", { className: "df-xp-dot", "aria-hidden": "true" }),
         /* @__PURE__ */ i("div", { children: [
-          /* @__PURE__ */ e("p", { className: "df-xp-role", children: "HTML · JavaScript · SQL · SAP" }),
-          /* @__PURE__ */ e("p", { className: "df-xp-meta", children: "building clean, responsive experiences" })
+          /* @__PURE__ */ e("p", { className: "df-xp-role", children: "♡ Infosys Springboard – Computational Theory" }),
+          /* @__PURE__ */ e("p", { className: "df-xp-meta", children: "Explores the theoretical foundations of computation, including automata, formal languages, and computability." })
+        ] })
+      ] }),
+            /* @__PURE__ */ i("li", { className: "df-xp-row", children: [
+        /* @__PURE__ */ e("span", { className: "df-xp-dot", "aria-hidden": "true" }),
+        /* @__PURE__ */ i("div", { children: [
+          /* @__PURE__ */ e("p", { className: "df-xp-role", children: "♡ NPTEL – Industrial Wastewater Treatment" }),
+          /* @__PURE__ */ e("p", { className: "df-xp-meta", children: " Covers methods and technologies for treating industrial effluents, relevant to environmental engineering and sustainability.." })
         ] })
       ] })
     ] })
-  ] }, "p4"),
+  ] }, "p6"),
   // spread 3 right: contact
   /* @__PURE__ */ i("div", { className: "df-page", children: [
     /* @__PURE__ */ e(De, { className: "df-doodle", style: { top: 2, right: 6, width: 16, height: 16 } }),
@@ -2315,28 +2393,44 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
       {
         className: "df-edit--body",
         placeholder: "a friendly note…",
-        initial: "Got a project, a collab idea, or just want to argue about the strongest Straw Hat? I'd love to hear from you."
+        initial: "Got a project, an ML idea, or just want to talk about AI and data? I'd love to hear from you."
       }
     ),
     /* @__PURE__ */ i("ul", { className: "df-links", children: [
-      /* @__PURE__ */ e("li", { children: /* @__PURE__ */ i("a", { className: "df-link", href: "https://github.com/Meghamittal0920", target: "_blank", rel: "noreferrer", children: [
+      /* @__PURE__ */ e("li", { children: /* @__PURE__ */ i("a", { className: "df-link", href: "https://github.com/dhanyalk-alt?utm_source=chatgpt.com", target: "_blank", rel: "noreferrer", children: [
         /* @__PURE__ */ e(A0, {}),
         " GitHub"
       ] }) }),
-      /* @__PURE__ */ e("li", { children: /* @__PURE__ */ i("a", { className: "df-link", href: "https://instagram.com/meghamittal92000", target: "_blank", rel: "noreferrer", children: [
+      /* @__PURE__ */ e("li", { children: /* @__PURE__ */ i("a", { className: "df-link", href: "https://www.linkedin.com/in/dhanya-lk", target: "_blank", rel: "noreferrer", children: [
         /* @__PURE__ */ e(T0, {}),
-        " Instagram"
+        " linkedin"
       ] }) }),
-      /* @__PURE__ */ e("li", { children: /* @__PURE__ */ i("a", { className: "df-link", href: "mailto:meghamittal563@gmail.com", children: [
+      /* @__PURE__ */ e("li", { children: /* @__PURE__ */ i("a", { className: "df-link", href: "mailto:dhanyadhanyalk@gmail.com", children: [
         /* @__PURE__ */ e($0, {}),
         " Email"
       ] }) })
     ] }),
+    /* @__PURE__ */ e(
+      ue,
+      {
+        className: "df-edit--body",
+        placeholder: "a friendly note…",
+        initial: "contact number: +91 6363106790, "
+      }
+    ),
+      /* @__PURE__ */ e(
+      ue,
+      {
+        className: "df-edit--body",
+        placeholder: "a friendly note…",
+        initial: "email : dhanyadhanyalk@gmail.com or 23a62.dhanya@sjec.ac.in"
+      }
+    ),
     /* @__PURE__ */ i("p", { className: "df-sig", children: [
       "say hi anytime ",
       /* @__PURE__ */ e("span", { className: "df-heart", "aria-hidden": "true", children: "♡" })
     ] })
-  ] }, "p5"),
+  ] }, "p7"),
   // spread 4 left: colophon
   /* @__PURE__ */ i("div", { className: "df-page", children: [
     /* @__PURE__ */ e(pe, { className: "df-doodle df-doodle--mint", style: { top: 2, right: 6, width: 16, height: 16 } }),
@@ -2346,23 +2440,23 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
       {
         className: "df-edit--body",
         placeholder: "a little note…",
-        initial: "This portfolio is a book you can actually open. It blooms apart, turns its pages on a spring, and shuts again — with a straw hat or two on the desk. Thanks for flipping through my little corner of the Grand Line."
+        initial: "Ngl this portfolio hits different — it's basically lowkey a book that opens itself, flips through a couple pages, and shuts back down — kinda soft, kinda cool,no cap. Thanks for pulling up and vibing through my little corner of the internet."
       }
     ) }),
     /* @__PURE__ */ i("p", { className: "df-sig", children: [
       "thanks for the curiosity ",
       /* @__PURE__ */ e("span", { className: "df-heart", "aria-hidden": "true", children: "♡" })
     ] })
-  ] }, "p6"),
+  ] }, "p8"),
   // spread 4 right: closing finale
   /* @__PURE__ */ i("div", { className: "df-page df-thanks", children: [
     /* @__PURE__ */ e(pe, { className: "df-thanks-spark" }),
     /* @__PURE__ */ i("p", { className: "df-thanks-title", children: [
-      "thanks for reading ",
+      "thanks for going through my piece of newly started journey ",
       /* @__PURE__ */ e("span", { className: "df-heart", "aria-hidden": "true", children: "♡" })
     ] }),
-    /* @__PURE__ */ e("span", { className: "df-thanks-sub", children: "let's make something" })
-  ] }, "p7")
+    /* @__PURE__ */ e("span", { className: "df-thanks-sub", children: "let's catch up" })
+  ] }, "p9")
 ];
 function _t() {
   return /* @__PURE__ */ i("div", { className: "ipod", children: [
@@ -2431,7 +2525,7 @@ function z0() {
     const f = window.matchMedia("(max-width: 760px)"), C = () => h(f.matches);
     return C(), f.addEventListener("change", C), () => f.removeEventListener("change", C);
   }, []);
-  const m = Math.min(800, Math.round(t.w * 0.82)), u = Math.max(150, Math.round(m / 2)), l = Math.round(u * 1.34), v = Math.min(1, t.h / (l + 376)), I = 380, w = 509, g = Math.min(t.w * 0.8, t.h * 0.5 / 1.34), T = g / I, O = { pageW: I, pageH: w, scale: T, w: Math.round(g), h: Math.round(g * 1.34) }, [D] = M(() => bt[Math.floor(Math.random() * bt.length)]), [A, Y] = M(D.coverId), Z = Xe.find((f) => f.id === A) ?? Xe[0], [F, _] = M(D.bgId), S = Pe.find((f) => f.id === F) ?? Pe[0];
+ const m = Math.min(1000, Math.round(t.w * 0.9)), u = Math.max(150, Math.round(m / 2)), l = Math.round(u * 1.34), v = Math.min(1, t.h / (l + 376)), I = 380, w = 509, g = Math.min(t.w * 0.9, t.h * 0.6 / 1.34), T = g / I, O = { pageW: I, pageH: w, scale: T, w: Math.round(g), h: Math.round(g * 1.34) }, [D] = M(() => bt[Math.floor(Math.random() * bt.length)]), [A, Y] = M(D.coverId), Z = Xe.find((f) => f.id === A) ?? Xe[0], [F, _] = M(D.bgId), S = Pe.find((f) => f.id === F) ?? Pe[0];
   W(() => {
     var U;
     const f = Pe.find((X) => X.id === D.bgId), C = (U = /url\(['"]?([^'")]+)/.exec(String((f == null ? void 0 : f.style.backgroundImage) ?? ""))) == null ? void 0 : U[1], H = (C ? [...dt, C] : dt).map(pt);
