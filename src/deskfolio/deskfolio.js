@@ -852,7 +852,7 @@ const dt = [
   ),
   DF_BASE + "stickers/devices/github-ipad.svg",
   // dev-activity iPad shell
-  DF_BASE + "megha-profile.jpg"
+  DF_BASE + "megha-profile.JPG"
   // about-page avatar
 ], c0 = ["onepiece", "workspace", "journal", "stationery"].map((t) => ve.find((r) => r.id === t)).filter((t) => !!t);
 function s0({ value: t, onChange: r }) {
