@@ -2251,8 +2251,15 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
      
         
       ] })
-    ] }),
-      /* @__PURE__ */ i("div", { className: "df-card", children: [
+    ] })
+] }, "p1"),
+     /* @__PURE__ */ i("div", { className: "df-page", children: [
+    /* @__PURE__ */ e(st, { className: "df-doodle df-doodle--lilac", style: { top: 0, right: 4, width: 26, height: 26 } }),
+    /* @__PURE__ */ e(De, { className: "df-doodle df-doodle--soft", style: { bottom: 96, right: 34, width: 26, height: 26, transform: "rotate(10deg)" } }),
+    /* @__PURE__ */ e(pe, { className: "df-doodle df-doodle--soft df-doodle--lilac", style: { bottom: 150, left: 14, width: 18, height: 18 } }),
+    /* @__PURE__ */ e(st, { className: "df-doodle df-doodle--soft df-doodle--mint", style: { bottom: 60, left: 30, width: 24, height: 24 } }),
+
+     /* @__PURE__ */ i("div", { className: "df-card", children: [
       /* @__PURE__ */ i("p", { className: "df-card-title", children: [
         /* @__PURE__ */ e(De, {}),
         " Hands on experience with databases and Web & Deployment"
@@ -2265,13 +2272,7 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
         /* @__PURE__ */ e("li", { className: "df-tag", children: "REST APIs" }),
         
       ] })
-    ] })
-] }, "p1"),
-     /* @__PURE__ */ i("div", { className: "df-page", children: [
-    /* @__PURE__ */ e(st, { className: "df-doodle df-doodle--lilac", style: { top: 0, right: 4, width: 26, height: 26 } }),
-    /* @__PURE__ */ e(De, { className: "df-doodle df-doodle--soft", style: { bottom: 96, right: 34, width: 26, height: 26, transform: "rotate(10deg)" } }),
-    /* @__PURE__ */ e(pe, { className: "df-doodle df-doodle--soft df-doodle--lilac", style: { bottom: 150, left: 14, width: 18, height: 18 } }),
-    /* @__PURE__ */ e(st, { className: "df-doodle df-doodle--soft df-doodle--mint", style: { bottom: 60, left: 30, width: 24, height: 24 } }),
+    ] }),
 
      /* @__PURE__ */ i("div", { className: "df-card", children: [
       /* @__PURE__ */ i("p", { className: "df-card-title", children: [
@@ -2491,19 +2492,19 @@ function dfViewportRead() {
 const Ue = { type: "spring", bounce: 0.22, duration: 0.55 };
 function z0() {
   const [t, r] = M(() => (typeof window > "u" ? { w: 1200, h: 900 } : dfViewportRead()));
-  W(() => {
-    let f = 0;
-    const C = () => {
-      f = 0;
-      const H = dfViewportRead();
-      r((U) => U.w === H.w && U.h === H.h ? U : H);
-    }, ae = () => {
-      f || (f = window.requestAnimationFrame(C));
-    }, vv = window.visualViewport;
-    return window.addEventListener("resize", ae), window.addEventListener("orientationchange", ae), vv == null || vv.addEventListener("resize", ae), () => {
-      window.removeEventListener("resize", ae), window.removeEventListener("orientationchange", ae), vv == null || vv.removeEventListener("resize", ae), f && window.cancelAnimationFrame(f);
-    };
-  }, []);
+W(() => {
+  let f = 0;
+  const C = () => {
+    f = 0;
+    const H = dfViewportRead();
+    r((U) => U.w === H.w && U.h === H.h ? U : H);
+  }, ae = () => {
+    f || (f = window.requestAnimationFrame(C));
+  }, vv = window.visualViewport;
+  return window.addEventListener("resize", ae), window.addEventListener("orientationchange", ae), vv == null || vv.addEventListener("resize", ae), () => {
+    window.removeEventListener("resize", ae), window.removeEventListener("orientationchange", ae), vv == null || vv.removeEventListener("resize", ae), f && window.cancelAnimationFrame(f);
+  };
+}, []);
   const a = re(), [n, s] = M(a ? 3 : 0), [k, p] = M(a);
   W(() => {
     if (a) {
