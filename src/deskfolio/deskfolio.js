@@ -852,7 +852,7 @@ const dt = [
   ),
   DF_BASE + "stickers/devices/github-ipad.svg",
   // dev-activity iPad shell
-  DF_BASE + "megha-profile.JPG"
+  DF_BASE + "megha-profile.jpg"
   // about-page avatar
 ], c0 = ["onepiece", "workspace", "journal", "stationery"].map((t) => ve.find((r) => r.id === t)).filter((t) => !!t);
 function s0({ value: t, onChange: r }) {
@@ -2178,7 +2178,7 @@ const A0 = (t) => /* @__PURE__ */ e("svg", { viewBox: "0 0 24 24", fill: "curren
       /* @__PURE__ */ e("span", { className: "df-heart", "aria-hidden": "true", children: "♡" })
     ] }),
     /* @__PURE__ */ i("div", { className: "df-about-head", children: [
-      /* @__PURE__ */ e("span", { className: "df-avatar df-avatar--big", children: /* @__PURE__ */ e("img", { src: DF_BASE + "megha-profile.JPG", alt: "Dhanya LK", loading: "lazy", decoding: "async" }) }),
+      /* @__PURE__ */ e("span", { className: "df-avatar df-avatar--big", children: /* @__PURE__ */ e("img", { src: DF_BASE + "megha-profile.jpg", alt: "Dhanya LK", loading: "lazy", decoding: "async" }) }),
       /* @__PURE__ */ i("div", { children: [
         /* @__PURE__ */ e(ue, { className: "df-name", placeholder: "your name", initial: "Dhanya LK" }),
         /* @__PURE__ */ i("span", { className: "df-role", children: [
