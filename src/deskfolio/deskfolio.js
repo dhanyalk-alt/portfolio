@@ -2481,23 +2481,27 @@ function _t() {
     ] })
   ] });
 }
+function dfViewportRead() {
+  const vv = window.visualViewport;
+  return {
+    w: Math.round((vv == null ? void 0 : vv.width) || window.innerWidth),
+    h: Math.round((vv == null ? void 0 : vv.height) || window.innerHeight)
+  };
+}
 const Ue = { type: "spring", bounce: 0.22, duration: 0.55 };
 function z0() {
-  const [t, r] = M(() => ({
-    w: typeof window > "u" ? 1200 : window.innerWidth,
-    h: typeof window > "u" ? 900 : window.innerHeight
-  }));
+  const [t, r] = M(() => (typeof window > "u" ? { w: 1200, h: 900 } : dfViewportRead()));
   W(() => {
     let f = 0;
     const C = () => {
       f = 0;
-      const H = { w: window.innerWidth, h: window.innerHeight };
+      const H = dfViewportRead();
       r((U) => U.w === H.w && U.h === H.h ? U : H);
     }, ae = () => {
       f || (f = window.requestAnimationFrame(C));
-    };
-    return window.addEventListener("resize", ae), () => {
-      window.removeEventListener("resize", ae), f && window.cancelAnimationFrame(f);
+    }, vv = window.visualViewport;
+    return window.addEventListener("resize", ae), window.addEventListener("orientationchange", ae), vv == null || vv.addEventListener("resize", ae), () => {
+      window.removeEventListener("resize", ae), window.removeEventListener("orientationchange", ae), vv == null || vv.removeEventListener("resize", ae), f && window.cancelAnimationFrame(f);
     };
   }, []);
   const a = re(), [n, s] = M(a ? 3 : 0), [k, p] = M(a);
@@ -2525,7 +2529,7 @@ function z0() {
     const f = window.matchMedia("(max-width: 760px)"), C = () => h(f.matches);
     return C(), f.addEventListener("change", C), () => f.removeEventListener("change", C);
   }, []);
- const m = Math.min(1000, Math.round(t.w * 0.9)), u = Math.max(150, Math.round(m / 2)), l = Math.round(u * 1.34), v = Math.min(1, t.h / (l + 376)), I = 380, w = 509, g = Math.min(t.w * 0.9, t.h * 0.6 / 1.34), T = g / I, O = { pageW: I, pageH: w, scale: T, w: Math.round(g), h: Math.round(g * 1.34) }, [D] = M(() => bt[Math.floor(Math.random() * bt.length)]), [A, Y] = M(D.coverId), Z = Xe.find((f) => f.id === A) ?? Xe[0], [F, _] = M(D.bgId), S = Pe.find((f) => f.id === F) ?? Pe[0];
+ const m = Math.min(1000, Math.round(t.w * 0.9)), u = Math.max(150, Math.round(m / 2)), l = Math.round(u * 1.34), v = Math.min(1, t.h / (l + 376)), I = 380, w = 509, g = Math.max(240, Math.min(t.w * 0.92, t.h * 0.62 / 1.34)), T = g / I,, O = { pageW: I, pageH: w, scale: T, w: Math.round(g), h: Math.round(g * 1.34) }, [D] = M(() => bt[Math.floor(Math.random() * bt.length)]), [A, Y] = M(D.coverId), Z = Xe.find((f) => f.id === A) ?? Xe[0], [F, _] = M(D.bgId), S = Pe.find((f) => f.id === F) ?? Pe[0];
   W(() => {
     var U;
     const f = Pe.find((X) => X.id === D.bgId), C = (U = /url\(['"]?([^'")]+)/.exec(String((f == null ? void 0 : f.style.backgroundImage) ?? ""))) == null ? void 0 : U[1], H = (C ? [...dt, C] : dt).map(pt);
